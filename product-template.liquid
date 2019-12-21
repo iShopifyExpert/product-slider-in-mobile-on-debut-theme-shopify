@@ -1,1 +1,7 @@
+//replace this
+{{ image.src | img_url: '110x110', scale: 2 }}
+to
+{{ image.src | img_url: '700x700', scale: 2 }}
 
+Example:
+<img class="product-single__thumbnail-image" src="{{ image.src | img_url: '700x700', scale: 2 }}" alt="{{ 'sections.featured_product.gallery_thumbnail_alt' | t: imageAlt: image.alt | escape }}">
