@@ -1,0 +1,34 @@
+#changes
+.thumbnails-slider--active {
+  .product-single__thumbnails {
+    display: none;
+    &.slick-initialized {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;   //add this css line
+    }
+  }
+}
+-------------------------------
+.thumbnails-slider__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;   //add this css line
+  outline: 0;   //add this css line
+}
+----------------------------
+.product-single__thumbnail {
+  margin: 0 auto;
+  //width: 50px;   //comment this css line
+}
+--------------------------
+//add this css in the bottom
+@media only screen and (max-width: 749px) {
+  .product-single__photo-wrapper {
+    display: none;
+  }
+  .product-single__thumbnail-image {
+    border: 0; 
+  }
+}
